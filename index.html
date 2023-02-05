@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fabian.css">
+</head>
+<body>
+
+    <section>
+        <nav class="navbar navbar-expand-lg bg-black text-bg-light " >
+                <div class="d-flex ms-auto" role="search" >
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success text-bg-light" type="submit" >Search</button>
+                </div>
+          </nav>
+    </section> <br>
+    <h1 class="container d-flex justify-content-center align-content-center">personajes</h1>
+    <div class="container d-flex justify-content-center  mt-3">
+        <button class="previus" id="previous" onclick="poke(+20)">Inicio</button>
+        <button class="previus" id="previous" onclick="poke(-20)">previous</button>
+        <button class="next" id="next" onclick="poke(+20)">next</button>
+    </div>
+    <div class="container">
+        <div class="row row-cols-2 row-cols-md-3 g-4" id="dataInfo"></div>
+    </div>
+    
+    <main class="botones">
+    </main>
+
+<script src="./js/index.js"></script>
+
+</body>
+</html>
